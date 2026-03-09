@@ -1,186 +1,309 @@
-﻿# churn-uplift-project
+---
 
-An end-to-end decision intelligence system that predicts which customers should be targeted for marketing interventions using uplift modeling and causal machine learning techniques. The system ranks customers by predicted treatment impact and provides business-driven insights through an interactive analytics dashboard.
+# 🌾 AgriIntel — AI-Driven Crop Yield Prediction & Farm Decision Support System
+
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-ScikitLearn-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+AgriIntel is an **end-to-end machine learning system** designed to predict **cotton production using environmental and economic factors** such as rainfall, temperature, and cultivation cost.
+
+The project integrates **multiple agricultural datasets**, builds a **predictive ML model**, and deploys it through an **interactive Streamlit dashboard** that enables users to estimate crop production under different farming conditions.
+
+This project demonstrates how **AI and data science can support precision agriculture and data-driven farm planning.**
 
 ---
 
-## Overview
+# 🚀 Live Demo
 
-Traditional machine learning models predict whether a customer will convert.  
-This project goes further by estimating **which customers will convert because of an intervention**, enabling smarter targeting and better ROI.
-
-The system helps answer:
-
-- Who should we target?
-- Who should we avoid targeting?
-- How many customers should we contact?
-- What profit can we expect?
-
-This shifts decision-making from prediction-based to **impact-based optimization**.
+🔗 Streamlit App
+[https://agriintel-crop-yield-prediction-hcd6cnnizm4ypzymfqdnpc.streamlit.app/](https://agriintel-crop-yield-prediction-hcd6cnnizm4ypzymfqdnpc.streamlit.app/)
 
 ---
 
-## Key Features
+# 📌 Problem Statement
 
-- End-to-end ML pipeline from raw data to decision output
-- Causal inference and uplift modeling implementation
-- Customer ranking based on predicted treatment effect
-- Decile analysis for business segmentation
-- Interactive dashboard for campaign simulation
-- ROI estimation based on cost and revenue inputs
-- Git version control with large file handling (Git LFS ready)
+Agricultural productivity is influenced by several **dynamic environmental and economic factors**, including:
 
----
+* Rainfall patterns
+* Temperature fluctuations
+* Cultivation costs
+* Market conditions
 
-## Dataset
+However, farmers and agricultural planners often lack **predictive tools that combine these variables into actionable insights.**
 
-- Real-world marketing dataset
-- ~64,000 customers
-- Includes treatment and control groups
-- Low conversion signal (~0.9%) — realistic industry scenario
+Without predictive analytics:
 
----
+• Crop production planning becomes uncertain
+• Resource allocation becomes inefficient
+• Risk management becomes difficult
 
-## Methodology
-
-### 1. Data Processing
-- Data cleaning
-- Feature engineering
-- Encoding categorical variables
-- Train/test splitting
-
-### 2. Modeling Approaches
-- Baseline predictive models
-- Uplift modeling techniques
-- Treatment vs control comparison
-
-### 3. Evaluation Metrics
-Instead of accuracy, uplift models require specialized metrics:
-
-- AUUC (Area Under Uplift Curve)
-- Decile Analysis
-- Conversion Lift
-- Treatment Effect Estimation
+This project aims to build a **data-driven crop yield prediction system** capable of estimating agricultural output using historical agricultural data.
 
 ---
 
-## Results
+# 🧠 Solution Overview
 
-Key findings from model evaluation:
+AgriIntel provides a **machine learning–based decision support system** that predicts cotton production using historical agricultural data.
 
-- Detected measurable treatment effect (~0.5% uplift)
-- Top decile customers showed **~3.3× higher conversion** than lowest decile
-- Successfully ranked customers by responsiveness despite low-signal dataset
-- Demonstrated real-world targeting improvement potential
+The system workflow includes:
 
----
+1️⃣ **Multi-dataset integration**
+2️⃣ **Feature engineering for environmental indicators**
+3️⃣ **Machine learning model training**
+4️⃣ **Deployment through an interactive dashboard**
 
-## Dashboard Capabilities
-
-The interactive dashboard allows users to:
-
-- Explore dataset statistics
-- Visualize uplift distribution
-- Analyze customer deciles
-- Simulate targeting percentages
-- Estimate expected conversions
-- Calculate projected ROI
-
-This enables non-technical users to make data-driven campaign decisions.
+Users can input environmental conditions and receive **real-time crop production predictions.**
 
 ---
 
-## Tech Stack
+# 🏗 System Architecture
 
-**Programming & ML**
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- CausalML
+```
+Agricultural Datasets
+(Crop Production, Rainfall, Temperature, Labor Cost, Market Price)
+            │
+            ▼
+Data Cleaning & Preprocessing
+(Pandas, NumPy)
+            │
+            ▼
+Feature Engineering
+(Rain Efficiency, Interaction Features)
+            │
+            ▼
+Model Training
+(Linear Regression, Random Forest)
+            │
+            ▼
+Model Evaluation
+(R² Score, RMSE)
+            │
+            ▼
+Prediction System
+(Streamlit Dashboard)
+            │
+            ▼
+Agricultural Decision Support
+```
 
-**Visualization & Deployment**
-- Streamlit
-
-**Development Tools**
-- Git
-- GitHub
-- Git LFS
+This architecture reflects a **typical industry ML pipeline used in production analytics systems.**
 
 ---
 
-## Project Structure
-project/
+# 📊 Datasets Used
+
+The project integrates **multiple agricultural datasets** to capture environmental conditions affecting crop production.
+
+### Crop Production Dataset
+
+* State-wise cotton production data
+* Area cultivated and yield statistics
+
+### Rainfall Dataset
+
+* Historical rainfall patterns across Indian regions
+
+### Temperature Dataset
+
+* Daily temperature data for major cities
+
+### Labor Cost Dataset
+
+* Agricultural cultivation cost statistics
+
+### Cotton Price Dataset
+
+* Market price trends for cotton
+
+All datasets were **cleaned, aligned, and merged** into a unified ML dataset.
+
+---
+
+# ⚙️ Data Processing Pipeline
+
+The project follows a structured data pipeline:
+
+1️⃣ Data Cleaning
+2️⃣ Feature Engineering
+3️⃣ Dataset Integration
+4️⃣ Time Alignment Across Datasets
+5️⃣ Model Training
+6️⃣ Model Evaluation
+7️⃣ Dashboard Deployment
+
+This pipeline ensures **data quality, model reliability, and reproducibility.**
+
+---
+
+# 🧠 Machine Learning Models
+
+Two regression models were trained and evaluated.
+
+### Linear Regression
+
+Captures relationships between crop production and environmental variables.
+
+### Random Forest Regressor
+
+An ensemble learning method capable of modeling **non-linear relationships and feature interactions.**
+
+---
+
+# 📈 Model Performance
+
+| Model             | R² Score | RMSE |
+| ----------------- | -------- | ---- |
+| Linear Regression | **0.91** | 187  |
+| Random Forest     | 0.87     | 221  |
+
+The **Linear Regression model achieved the highest accuracy** and was selected for deployment.
+
+---
+
+# 🤖 Prediction Logic
+
+The prediction system estimates cotton production using the following input variables:
+
+* Rainfall
+* Average Temperature
+* Cultivation Cost
+* Rainfall–Temperature Interaction
+* Rain Efficiency Index
+
+These engineered features help the model **capture environmental relationships affecting crop productivity.**
+
+---
+
+# 🖥 Interactive Dashboard
+
+An interactive **Streamlit web dashboard** was developed to demonstrate the prediction system.
+
+Users can input environmental conditions and obtain **real-time crop production estimates.**
+
+### Dashboard Features
+
+• Clean and intuitive interface
+• Real-time prediction system
+• Project methodology explanation
+• Technical overview of models and datasets
+
+The dashboard acts as a **prototype decision support tool for agritech platforms.**
+
+---
+
+# 🛠 Technology Stack
+
+| Category         | Tools               |
+| ---------------- | ------------------- |
+| Programming      | Python              |
+| Data Processing  | Pandas, NumPy       |
+| Machine Learning | Scikit-Learn        |
+| Visualization    | Matplotlib, Seaborn |
+| Web Application  | Streamlit           |
+| Version Control  | GitHub              |
+
+---
+
+# 📂 Project Structure
+
+```
+AgriIntel
 │
-├── data/
-├── notebooks/
-├── models/
-├── dashboard/
-├── src/
+├── data
+│   ├── crop_production.csv
+│   ├── rainfall.csv
+│   ├── temperature.csv
+│   ├── labor.csv
+│   └── cotton_price.csv
+│
+├── notebooks
+│   └── data_analysis.ipynb
+│
+├── models
+│   └── crop_yield_model.pkl
+│
+├── app.py
 ├── requirements.txt
 └── README.md
-
-
----
-
-## Business Impact
-
-This system demonstrates how causal machine learning can:
-
-- Reduce marketing costs
-- Increase campaign efficiency
-- Identify high-value customers
-- Avoid unnecessary outreach
-- Optimize decision-making
-
-Instead of targeting everyone, organizations can target only customers who are likely to respond positively.
+```
 
 ---
 
-## Key Learning Outcomes
+# ▶️ Running the Project
 
-This project demonstrates practical skills in:
+### Install dependencies
 
-- Applied machine learning
-- Causal inference
-- Experimental reasoning
-- Model evaluation
-- Business analytics
-- End-to-end ML development
-- Decision-focused AI systems
+```
+pip install -r requirements.txt
+```
 
----
+### Run the Streamlit dashboard
 
-## Future Improvements
+```
+streamlit run app.py
+```
 
-- Advanced meta-learners (X-Learner, DR-Learner)
-- Real-time prediction API
-- Automated hyperparameter tuning
-- Cloud deployment
-- Model monitoring pipeline
+The application will launch locally in your browser.
 
 ---
 
-## Author
+# 📈 Skills Demonstrated
 
-**Devraj Choudhary**  
-Machine Learning & Data Science Enthusiast
+This project demonstrates key **data science and machine learning competencies**:
+
+• Data Cleaning & Preprocessing
+• Feature Engineering
+• Multi-dataset Integration
+• Machine Learning Model Development
+• Model Evaluation & Validation
+• Interactive Dashboard Development
+• End-to-End ML Pipeline Design
 
 ---
 
-## License
+# 🔮 Future Improvements
 
-This project is for educational and demonstration purposes.
+Potential enhancements include:
 
-Here are Some Screenshots of this Project of Dashboard
+• Integration of **satellite NDVI vegetation data**
+• Soil moisture and soil quality datasets
+• Multi-crop prediction models
+• Deployment as a **cloud-based API**
+• Integration with **real-time weather APIs**
 
-<img width="1919" height="857" alt="image" src="https://github.com/user-attachments/assets/10d108a7-5fcb-4245-af9c-5ad1007d4fed" />
+---
 
-<img width="1919" height="660" alt="image" src="https://github.com/user-attachments/assets/afa94338-a0a3-4d07-8609-87929a9b1494" />
+# 💡 Potential Applications
 
-<img width="1919" height="956" alt="image" src="https://github.com/user-attachments/assets/e7daeb57-ec8a-44a9-a31b-bddedf0faa1e" />
+AgriIntel can support:
 
+• Precision agriculture platforms
+• Agritech analytics systems
+• Smart farming advisory tools
+• Agricultural robotics planning
+• Government agricultural policy planning
 
+---
 
+# 👨‍💻 Author
 
+**Devraj Choudhary**
+
+B.Tech – Computer Science & Engineering
+Gurukul Kangri Deemed to be University
+
+Interests
+• Data Science
+• Machine Learning
+• AI for Agriculture
+
+GitHub
+[https://github.com/CodingWithDevraj](https://github.com/CodingWithDevraj)
+
+LinkedIn
+[https://www.linkedin.com/in/devraj-choudhary-3889412bb/](https://www.linkedin.com/in/devraj-choudhary-3889412bb/)
+
+---
 
