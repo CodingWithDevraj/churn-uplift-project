@@ -227,8 +227,8 @@ Roorkee, Uttarakhand
 Email: [devrajror366@gmail.com](mailto:devrajror366@gmail.com)
 LinkedIn: [https://www.linkedin.com/in/devraj-choudhary-3889412bb/](https://www.linkedin.com/in/devraj-choudhary-3889412bb/)
 GitHub: [https://github.com/CodingWithDevraj](https://github.com/CodingWithDevraj)
-Streamlit: https://churn-uplift-project-ywtsbsygcbjklcrmuqubnm.streamlit.app/
 
 ---
+
 
 
