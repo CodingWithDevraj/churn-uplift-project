@@ -403,7 +403,7 @@ st.markdown("""
 @st.cache_data
 def get_uplift_data():
     try:
-        df = pd.read_csv("./data/Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv")
+        df = pd.read_csv("./data/raw/Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv")
     except:
         df = pd.DataFrame({
             'segment':    np.random.choice(['No E-Mail', 'Mens E-Mail', 'Womens E-Mail'], 10000),
