@@ -1,5 +1,3 @@
----
-
 # Customer Uplift Modeling for Targeted Marketing
 
 ## Overview
@@ -232,4 +230,5 @@ GitHub: [https://github.com/CodingWithDevraj](https://github.com/CodingWithDevra
 Streamlit: https://churn-uplift-project-ywtsbsygcbjklcrmuqubnm.streamlit.app/
 
 ---
+
 
