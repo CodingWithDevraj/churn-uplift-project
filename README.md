@@ -63,11 +63,12 @@ churn_uplift_project
 ├── notebooks
 │   └── EDA.ipynb
 │
-├── app.py  
-│
 ├── models
+│   └── baseline_model.pkl
 │
-├── outputs
+├── .gitattributes
+│
+├── app.py  
 │
 ├── requirements.txt
 │
@@ -239,3 +240,4 @@ Possible extensions for the project:
 
 
 If you want, I can also give you **3 small GitHub improvements that make your project look like a senior data scientist project (and impress recruiters)**.
+
