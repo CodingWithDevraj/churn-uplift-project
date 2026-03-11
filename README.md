@@ -48,6 +48,10 @@ Target variables:
 ```
 churn_uplift_project
 │
+├── .ipynb_checkpoints
+│   ├── EDA-checkpoint.ipynb
+│   └── Untitled-checkpoint.ipynb
+│
 ├── data
 │   ├── raw
 │   │   └── Kevin_Hillstrom_Email_Data.csv
@@ -66,9 +70,11 @@ churn_uplift_project
 ├── models
 │   └── baseline_model.pkl
 │
-├── .gitattributes
+├── outputs
 │
-├── app.py  
+├── .gitignore
+│
+├── app.py
 │
 ├── requirements.txt
 │
@@ -240,4 +246,5 @@ Possible extensions for the project:
 
 
 If you want, I can also give you **3 small GitHub improvements that make your project look like a senior data scientist project (and impress recruiters)**.
+
 
