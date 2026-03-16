@@ -245,7 +245,4 @@ Possible extensions for the project:
 ---
 
 
-If you want, I can also give you **3 small GitHub improvements that make your project look like a senior data scientist project (and impress recruiters)**.
-
-
 
