@@ -1,6 +1,8 @@
-# 🎯 Customer Uplift Modeling for Targeted Marketing
+---
 
-## 📌 Overview
+# Customer Uplift Modeling for Targeted Marketing
+
+## Overview
 
 This project implements an **end-to-end causal machine learning system** to identify customers who are most likely to respond positively to marketing interventions. Instead of predicting churn or conversion probability alone, the model estimates the **incremental impact of marketing campaigns (uplift)** on individual customers.
 
@@ -10,21 +12,21 @@ The project includes data preprocessing, exploratory analysis, uplift model trai
 
 ---
 
-# 💼 Business Problem
+# Business Problem
 
 Traditional predictive models identify customers likely to convert. However, many of these customers would convert **even without marketing intervention**, which wastes marketing budget.
 
 **Uplift modeling solves this by identifying:**
 
-* 🎯 Customers who will respond **only if targeted**
-* 🛒 Customers who will purchase **regardless of marketing**
-* 🚫 Customers who **should not be targeted**
+* Customers who will respond **only if targeted**
+* Customers who will purchase **regardless of marketing**
+* Customers who **should not be targeted**
 
 This enables **data-driven campaign optimization and ROI improvement.**
 
 ---
 
-# 📊 Dataset
+# Dataset
 
 The project uses the **Kevin Hillstrom MineThatData Email Marketing Dataset**, a well-known dataset for uplift modeling research.
 
@@ -38,12 +40,12 @@ The dataset contains customer behavioral features including:
 
 Target variables:
 
-* 📧 **Treatment** → Whether a marketing email was sent
-* 💰 **Conversion** → Whether the customer made a purchase
+* **Treatment** → Whether a marketing email was sent
+* **Conversion** → Whether the customer made a purchase
 
 ---
 
-# 🏗 Project Architecture
+# Project Architecture
 
 ```
 churn_uplift_project
@@ -83,7 +85,7 @@ churn_uplift_project
 
 ---
 
-# ⚙️ Methodology
+# Methodology
 
 ## 1️⃣ Data Preprocessing
 
@@ -102,7 +104,7 @@ EDA was performed to analyze:
 
 ---
 
-## 🤖 3️⃣ Uplift Modeling Approach
+## 3️⃣ Uplift Modeling Approach
 
 The project focuses on **causal machine learning techniques** rather than traditional predictive models.
 
@@ -116,35 +118,35 @@ The model estimates the **incremental impact of marketing intervention**.
 
 ---
 
-# 📈 Model Evaluation
+# Model Evaluation
 
 Uplift models are evaluated using **ranking-based metrics** rather than traditional accuracy metrics.
 
 Key evaluation methods:
 
-* 📊 **Uplift Curve**
-* 📉 **Qini Curve**
-* 🔟 **Decile Analysis**
-* 🔍 **Treatment vs Control response comparison**
+* **Uplift Curve**
+* **Qini Curve**
+* **Decile Analysis**
+* **Treatment vs Control response comparison**
 
 These metrics measure how well the model identifies customers whose behavior is influenced by marketing.
 
 ---
 
-# 🖥 Interactive Dashboard
+# Interactive Dashboard
 
 The project includes a **Streamlit dashboard** to visualize campaign performance and uplift insights.
 
 The dashboard allows users to:
 
-* 📊 Explore customer segments
-* 📈 Visualize uplift scores
-* 🔍 Analyze treatment vs control conversions
-* 🎯 Simulate marketing targeting strategies
+* Explore customer segments
+* Visualize uplift scores
+* Analyze treatment vs control conversions
+* Simulate marketing targeting strategies
 
 ---
 
-# 🚀 How to Run the Project
+# How to Run the Project
 
 ## 1️⃣ Clone the Repository
 
@@ -175,11 +177,11 @@ The dashboard will open in your browser.
 
 ---
 
-# 🧰 Tech Stack
+# Tech Stack
 
 **Programming**
 
-* 🐍 Python
+* Python
 
 **Data Processing**
 
@@ -203,7 +205,7 @@ The dashboard will open in your browser.
 
 ---
 
-# 🎯 Key Outcomes
+# Key Outcomes
 
 * Built an end-to-end **causal machine learning pipeline**
 * Identified customers most likely to respond to marketing campaigns
@@ -213,7 +215,7 @@ The dashboard will open in your browser.
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 Possible extensions for the project:
 
@@ -224,25 +226,23 @@ Possible extensions for the project:
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Devraj Choudhary**
 
-🎓 B.Tech – Gurukul Kangri University
-📍 Roorkee, Uttarakhand
+B.Tech – Gurukul Kangri University
+Roorkee, Uttarakhand
 
-📧 Email: [devrajror366@gmail.com](mailto:devrajror366@gmail.com)
+Email: [devrajror366@gmail.com](mailto:devrajror366@gmail.com)
 
-🔗 LinkedIn:
+LinkedIn
 [https://www.linkedin.com/in/devraj-choudhary-3889412bb/](https://www.linkedin.com/in/devraj-choudhary-3889412bb/)
 
-💻 GitHub:
+GitHub
 [https://github.com/CodingWithDevraj](https://github.com/CodingWithDevraj)
 
-🌐 **Working Dashboard:**
+Working Dashboard
 [https://churn-uplift-project-ywtsbsygcbjklcrmuqubnm.streamlit.app/](https://churn-uplift-project-ywtsbsygcbjklcrmuqubnm.streamlit.app/)
 
 ---
-
-
 
