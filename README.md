@@ -231,7 +231,7 @@ Possible extensions for the project:
 **Devraj Choudhary**
 
 B.Tech – Gurukul Kangri University
-Roorkee, Uttarakhand
+Haridwar, Uttarakhand
 
 Email: [devrajror366@gmail.com](mailto:devrajror366@gmail.com)
 
