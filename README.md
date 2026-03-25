@@ -1,5 +1,3 @@
----
-
 # Customer Uplift Modeling for Targeted Marketing
 
 ## Overview
